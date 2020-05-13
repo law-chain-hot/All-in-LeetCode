@@ -1,3 +1,24 @@
+"""
+# {My own explanation of this problem}
+# {2020.05.13}
+# {Method: 1}
+# {Recursion}
+
+We can traverse both given tree by recursion
+
+At every step, we check if the current node exists for both given trees.
+If they both exist, we add them up, the sum is the value of the current node in the output tree.
+
+And At every step, we call the original function with both left children of both given tree. 
+The result of the function is considered as the left child of the current node. 
+
+And also, in the same way, call the original function again with the right children. 
+
+Finally, we return the new node, which is the root of new merged tree
+
+"""
+
+
 class Solution:
     def mergeTrees(self, t1, t2):
 
@@ -13,6 +34,9 @@ class Solution:
         ans.right = self.mergeTrees(t1.right, t2.right)
 
         return ans
+
+
+
 
 
 """
@@ -37,3 +61,4 @@ Complexity Analysis
     - Space complexity : O(m) 
         The depth of the recursion tree can go upto mm in the case of a skewed tree. In average case, depth will be O(logm)O(logm).
 """
+
