@@ -2,7 +2,7 @@
 # { 2020.05.13 }
 # { Method: 2 } 
 # { Hash Table or Voting }
-# { Optimal: Voting }
+# { Optimal: Voting }  ？Not yet 
     - Time complexity:   O(n)
     - Space complexity:  O(1) 
 
