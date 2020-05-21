@@ -27,7 +27,7 @@ class Solution:
             return t2
         if not t2:
             return t1
-            
+
         # t1 and t2 both exist
         ans = TreeNode(t1.val + t2.val)  
         ans.left = self.mergeTrees(t1.left, t2.left)
